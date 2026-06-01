@@ -1,19 +1,15 @@
 # FE22 JavaScript 2 — Mini Project 4 Calculator
 
-<p align="center">
-  <a href="https://fe22-js2-mp4-calculator.netlify.app"><img src="https://img.shields.io/badge/Live%20demo-Netlify-2563eb?style=for-the-badge&logo=netlify&logoColor=white" alt="Live demo on Netlify"></a>
-  <img src="https://img.shields.io/badge/Program-FE22-2563eb?style=for-the-badge" alt="FE22 program">
-  <img src="https://img.shields.io/badge/Course-JavaScript%202-2563eb?style=for-the-badge" alt="JavaScript 2">
-  <img src="https://img.shields.io/badge/Assignment-Mini%20Project%204-2563eb?style=for-the-badge" alt="Mini Project 4">
-</p>
+[![Live demo](https://img.shields.io/badge/Live%20demo-Netlify-2563eb?style=for-the-badge&logo=netlify&logoColor=white)](https://fe22-js2-mp4-calculator.netlify.app)
+![FE22](https://img.shields.io/badge/Program-FE22-2563eb?style=for-the-badge)
+![JavaScript 2](https://img.shields.io/badge/Course-JavaScript%202-2563eb?style=for-the-badge)
+![Mini Project 4](https://img.shields.io/badge/Assignment-Mini%20Project%204-2563eb?style=for-the-badge)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/TypeScript-5-2563eb?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
-  <img src="https://img.shields.io/badge/Vite-6-2563eb?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
-  <img src="https://img.shields.io/badge/Vitest-3-2563eb?style=for-the-badge" alt="Vitest">
-  <img src="https://img.shields.io/badge/ESLint-9-2563eb?style=for-the-badge&logo=eslint&logoColor=white" alt="ESLint">
-  <img src="https://img.shields.io/badge/License-ISC-2563eb?style=for-the-badge" alt="ISC License">
-</p>
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-2563eb?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+![Vite](https://img.shields.io/badge/Vite-6-2563eb?style=for-the-badge&logo=vite&logoColor=white)
+![Vitest](https://img.shields.io/badge/Vitest-3-2563eb?style=for-the-badge)
+![ESLint](https://img.shields.io/badge/ESLint-9-2563eb?style=for-the-badge&logo=eslint&logoColor=white)
+![License](https://img.shields.io/badge/License-ISC-2563eb?style=for-the-badge)
 
 <p align="center">
   A responsive calculator built with <strong>TypeScript</strong> and <strong>Vite</strong>. Originally submitted in March 2023 as a frontend school assignment, then rebuilt with clearer architecture, keyboard support, and automated tests.

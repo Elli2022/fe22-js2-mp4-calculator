@@ -33,6 +33,22 @@
 
 The app covers basic arithmetic (`+`, `−`, `×`, `÷`), percentages, expression preview, and keyboard-friendly controls. Calculator logic lives in a separate module so the UI and math can be tested independently.
 
+### Repository history
+
+This repo combines two earlier GitHub repositories into one timeline:
+
+| Period | Repository | Stack |
+| --- | --- | --- |
+| March 2023 | `Portfolio-Advanced-Calculator` | TypeScript + Parcel (original school submission) |
+| 2023 → today | `fe22-js2-mp4-calculator` | TypeScript + Vite + Vitest (rebuild) |
+
+The 2023 Parcel history is preserved in git — browse it with:
+
+```bash
+git log --graph --oneline --all
+git log portfolio/main --oneline   # original 2023 commits only
+```
+
 ---
 
 ## Screenshots

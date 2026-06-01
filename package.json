@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "clean": "del-cli ./docs ./dist ./coverage"
+    "clean": "del-cli ./dist ./coverage"
   },
   "keywords": [
     "calculator",

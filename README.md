@@ -1,69 +1,108 @@
 # Precision Calculator
 
-A modernized calculator app built with TypeScript and Vite. This project revisits an earlier frontend exercise and turns it into a cleaner, more production-minded implementation with a better toolchain, stronger UI decisions, and a testable calculation engine.
+A responsive calculator web app built with **TypeScript** and **Vite**. It started as a frontend school assignment and was later modernized into a cleaner, production-minded codebase with keyboard support, separated calculation logic, and automated tests.
 
-## Live Demo
+[![Live demo](https://img.shields.io/badge/demo-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://precision-calculator-elli2022.netlify.app)
 
-[elli2022.github.io/precision-calculator](https://elli2022.github.io/precision-calculator/)
+## Live demo
 
-## Highlights
+**https://precision-calculator-elli2022.netlify.app**
 
-- Responsive interface with a more polished visual direction
-- Keyboard support for numbers, operators, `Enter`, `Backspace`, `%`, and `Escape`
-- Safer calculation flow with clear error handling for invalid operations
-- Separated calculator logic that can be tested independently from the UI
-- Fast modern build setup with Vite
+## Background
 
-## Stack
+This repository began in March 2023 as **FE22 JavaScript 2 — Mini Project 4** (`FE22-js2-mp4`), a coursework calculator built with TypeScript and Parcel. It was **not** a final thesis project (`slutprojekt`) and **not** part of JavaScript 1 — the original repo name and README used the `js2` / `mp4` course naming convention.
+
+The current version is a ground-up rebuild that keeps the same core idea while improving structure, tooling, accessibility, and deployment.
+
+## Screenshots
+
+| Desktop | Mobile |
+| --- | --- |
+| ![Desktop view of Precision Calculator](./screenshots/desktop.png) | ![Mobile view of Precision Calculator](./screenshots/mobile.png) |
+
+## Features
+
+- Four-function calculator with percentage support
+- Keyboard input for digits, operators, `Enter`, `Backspace`, `%`, and `Escape`
+- Expression preview and clear error handling for invalid operations
+- Calculation engine separated from the UI for focused unit tests
+- Responsive layout with a keyboard-first interaction model
+
+## Tech stack
 
 - TypeScript
 - Vite
 - Vitest
 - ESLint
-- Vanilla HTML and CSS
+- Semantic HTML and vanilla CSS
 
-## Getting Started
+## Getting started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) 20 or newer
+- npm
+
+### Install and run locally
 
 ```bash
+git clone https://github.com/Elli2022/precision-calculator.git
+cd precision-calculator
 npm install
 npm run dev
 ```
 
-Open the local development URL shown in the terminal to use the app.
+Open the local URL shown in the terminal (typically `http://localhost:5173`).
 
-## Available Scripts
+### Scripts
 
-```bash
-npm run dev
-npm run build
-npm run preview
-npm run test
-npm run lint
-npm run typecheck
-```
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the Vite dev server |
+| `npm run build` | Production build to `dist/` |
+| `npm run preview` | Preview the production build locally |
+| `npm run test` | Run Vitest unit tests |
+| `npm run lint` | Lint the project with ESLint |
+| `npm run typecheck` | Type-check without emitting files |
+| `npm run clean` | Remove build and coverage artifacts |
 
-## Project Structure
+## Project structure
 
 ```text
 .
-├── index.html
-├── src
-│   ├── calculator.ts
-│   ├── calculator.test.ts
-│   ├── main.ts
+├── index.html          # App shell and calculator markup
+├── netlify.toml        # Netlify build and publish settings
+├── screenshots/        # README visuals
+├── src/
+│   ├── calculator.ts       # Pure calculation logic
+│   ├── calculator.test.ts  # Unit tests
+│   ├── main.ts             # UI wiring and keyboard handling
 │   ├── styles.css
-│   └── images
-└── docs
+│   └── images/
+└── dist/               # Production output (generated, not committed)
 ```
 
-## Notes
+## Deployment
 
-- Production builds are written to `docs/` to keep GitHub Pages deployment simple.
-- The current implementation focuses on a strong four-function calculator experience with percentage support and keyboard-friendly interactions.
+The app is deployed on **Netlify** from the `main` branch:
 
-## Future Improvements
+- **Build command:** `npm run build`
+- **Publish directory:** `dist`
 
-- Add calculation history
-- Add memory controls
-- Add theme switching and saved preferences
-- Expand test coverage for more interaction flows
+`netlify.toml` in the repo defines these settings. GitHub Pages is no longer used for this project.
+
+## Testing
+
+```bash
+npm run test
+```
+
+Tests cover the calculator engine (`src/calculator.test.ts`) independently of DOM code.
+
+## License
+
+ISC
+
+## Author
+
+Eleonora Nocentini
